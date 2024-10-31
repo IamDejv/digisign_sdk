@@ -16,17 +16,7 @@ class BatchSendingEndpointTest extends EndpointTestCase
 
     public function testCRUD(): void
     {
-        self::endpoint()->get('foo');
-        self::assertLastRequest('GET', "/api/batch-sendings/foo");
-
-        self::endpoint()->create([]);
-        self::assertLastRequest('POST', "/api/batch-sendings");
-
-        self::endpoint()->update('foo', []);
-        self::assertLastRequest('PUT', "/api/batch-sendings/foo");
-
-        self::endpoint()->delete('foo');
-        self::assertLastRequest('DELETE', "/api/batch-sendings/foo");
+        self::assertCrudRequests(self::endpoint(), '/api/batch-sendings');
     }
 
     public function testSend(): void
