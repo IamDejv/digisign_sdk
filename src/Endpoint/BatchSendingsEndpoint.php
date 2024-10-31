@@ -8,9 +8,11 @@ use DigitalCz\DigiSign\DigiSign;
 use DigitalCz\DigiSign\Endpoint\Traits\CreateEndpointTrait;
 use DigitalCz\DigiSign\Endpoint\Traits\DeleteEndpointTrait;
 use DigitalCz\DigiSign\Endpoint\Traits\GetEndpointTrait;
+use DigitalCz\DigiSign\Endpoint\Traits\ListEndpointTrait;
 use DigitalCz\DigiSign\Endpoint\Traits\UpdateEndpointTrait;
 use DigitalCz\DigiSign\Resource\BaseResource;
 use DigitalCz\DigiSign\Resource\BatchSending;
+use DigitalCz\DigiSign\Resource\ListResource;
 
 /**
  * @extends ResourceEndpoint<BatchSending>
@@ -18,9 +20,12 @@ use DigitalCz\DigiSign\Resource\BatchSending;
  * @method BatchSending update(string $id, array $body)
  * @method BatchSending create(array $body)
  * @method BatchSending delete(string $id)
+ * @method ListResource<BatchSending> list(array $query)
  */
 final class BatchSendingsEndpoint extends ResourceEndpoint
 {
+    /** @use ListEndpointTrait<BatchSending> */
+    use ListEndpointTrait;
     use GetEndpointTrait;
     use UpdateEndpointTrait;
     use CreateEndpointTrait;
