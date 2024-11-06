@@ -9,6 +9,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Add `BatchSendingsEndpoint.list` endpoint
 - Add `AccountSecurity.visibleAutosignRoleOption` in to resource
 - Add `AccountSecurity.visibleNoneSignerChannelOption` in to resource
+- Add `BatchSendingsEndpoint.stats` endpoint
 
 ## [2.5.0] - 2024-10-14
 - Add `AccountBilling.automaticTagsPlacement`

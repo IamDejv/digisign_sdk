@@ -25,6 +25,12 @@ class BatchSendingEndpointTest extends EndpointTestCase
         self::assertLastRequest('POST', "/api/batch-sendings/foo/send");
     }
 
+    public function testStats(): void
+    {
+        self::endpoint()->stats('foo');
+        self::assertLastRequest('GET', "/api/batch-sendings/foo/stats");
+    }
+
     protected static function endpoint(): BatchSendingsEndpoint
     {
         return self::dgs()->batchSendings();
