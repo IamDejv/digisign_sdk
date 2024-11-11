@@ -14,6 +14,8 @@ class BatchSendingStats extends BaseResource
 
     public int $waiting;
 
+    public int $totalEnvelopes;
+
     public int $sent;
 
     public int $completed;
