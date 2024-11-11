@@ -13,7 +13,7 @@ class BatchSendingItem extends BaseResource
 
     public string $name;
 
-    public ?string $envelopeId;
+    public ?Envelope $envelope;
 
     public string $status;
 
