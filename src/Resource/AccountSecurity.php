@@ -36,4 +36,8 @@ class AccountSecurity extends BaseResource
     public int $discardedIdentificationRetention;
 
     public bool $signDocumentsAtOnce;
+
+    public bool $visibleAutosignRoleOption;
+
+    public bool $visibleNoneSignerChannelOption;
 }
