@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DigitalCz\DigiSign\Resource;
 
+use DateTime;
 use DigitalCz\DigiSign\Resource\Traits\EntityResourceTrait;
 
 class BatchSending extends BaseResource
@@ -34,4 +35,10 @@ class BatchSending extends BaseResource
      * @var array<string>
      */
     public array $importFields;
+
+    public ?DateTime $sentAt;
+
+    public ?DateTime $finishedAt;
+
+    public ?Blame $sentBy;
 }

@@ -12,6 +12,7 @@ use DigitalCz\DigiSign\Endpoint\Traits\ListEndpointTrait;
 use DigitalCz\DigiSign\Endpoint\Traits\UpdateEndpointTrait;
 use DigitalCz\DigiSign\Resource\BaseResource;
 use DigitalCz\DigiSign\Resource\BatchSending;
+use DigitalCz\DigiSign\Resource\BatchSendingStats;
 use DigitalCz\DigiSign\Resource\ListResource;
 
 /**
@@ -44,5 +45,10 @@ final class BatchSendingsEndpoint extends ResourceEndpoint
     public function send(BatchSending|string $id): BaseResource
     {
         return $this->makeResource($this->postRequest('/{id}/send', ['id' => $id]));
+    }
+
+    public function stats(BatchSending|string $id): BatchSendingStats
+    {
+        return $this->createResource($this->getRequest('/{id}/stats', ['id' => $id]), BatchSendingStats::class);
     }
 }
