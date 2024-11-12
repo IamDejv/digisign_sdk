@@ -41,5 +41,5 @@ class AccountSecurity extends BaseResource
 
     public bool $visibleNoneSignerChannelOption;
 
-    public bool $hasAkvCertificate;
+    public bool $hasCustomCertificate;
 }
