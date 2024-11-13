@@ -40,4 +40,6 @@ class AccountSecurity extends BaseResource
     public bool $visibleAutosignRoleOption;
 
     public bool $visibleNoneSignerChannelOption;
+
+    public bool $hasCustomCertificate;
 }
