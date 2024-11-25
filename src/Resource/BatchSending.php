@@ -15,7 +15,10 @@ class BatchSending extends BaseResource
 
     public ?string $name;
 
-    public ?string $envelopeTemplateId;
+    /**
+     * @var array{id: string, title: ?string}|null
+     */
+    public ?array $envelopeTemplate;
 
     public ?UserInfo $owner;
 
