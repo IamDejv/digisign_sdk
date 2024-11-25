@@ -26,6 +26,8 @@ class BatchSendingStats extends BaseResource
 
     public int $cancelled;
 
+    public int $correction;
+
     public int $disapproved;
 
     public int $deliveryFailed;
