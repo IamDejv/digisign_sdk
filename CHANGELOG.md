@@ -11,7 +11,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Add `AccountSecurity.visibleNoneSignerChannelOption` in to resource
 - Add `AccountSecurity.hasCustomCertificate` in to resource
 - Add `BatchSendingsEndpoint.stats` endpoint
-- Extend `BatchSending` resource
+- Extend `BatchSending` and `BatchSendingItem` resource
 - Edit `BatchSending` resource with envelopeTemplate
 
 ## [2.5.0] - 2024-10-14
