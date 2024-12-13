@@ -5,6 +5,7 @@ All notable changes will be documented in this file.
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
 ## [Unreleased]
+- Add `SignatureScenarioVersionInfo.role`
 - Add `BatchSendingsEndpoint.send` endpoint
 - Add `BatchSendingsEndpoint.list` endpoint
 - Add `AccountSecurity.visibleAutosignRoleOption` in to resource
