@@ -9,4 +9,5 @@ class SignatureScenarioVersionInfo extends BaseResource
     public string $id;
     public string $name;
     public int $version;
+    public string $role;
 }
