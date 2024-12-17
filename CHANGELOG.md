@@ -15,6 +15,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Extend `BatchSending` and `BatchSendingItem` resource
 - Edit `BatchSending` resource with envelopeTemplate
 - Extend `BatchSendingStats` resource with deleted
+- Add `AccountBilling.cancelAt`
 
 ## [2.5.0] - 2024-10-14
 - Add `AccountBilling.automaticTagsPlacement`
