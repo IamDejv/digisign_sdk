@@ -57,6 +57,12 @@ class AccountEndpointTest extends EndpointTestCase
         self::assertLastRequest('POST', '/api/account/manage-billing');
     }
 
+    public function testCreateDefaultSubscription(): void
+    {
+        self::endpoint()->createDefaultSubscription();
+        self::assertLastRequest('POST', '/api/account/billing/default-subscription');
+    }
+
     public function testDeactivate(): void
     {
         self::endpoint()->deactivate();
