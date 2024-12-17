@@ -22,6 +22,8 @@ class AccountBilling extends BaseResource
 
     public ?DateTime $billingPeriodEnd;
 
+    public ?DateTime $cancelAt;
+
     public int $userUsage;
 
     public ?int $userLimit;
