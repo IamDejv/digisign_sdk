@@ -11,5 +11,8 @@ class SignatureScenario extends BaseResource
     use EntityResourceTrait;
 
     public string $name;
+
     public bool $active;
+
+    public ?SignatureScenarioVersionInfo $latestVersionInfo;
 }

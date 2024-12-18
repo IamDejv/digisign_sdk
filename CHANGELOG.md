@@ -17,6 +17,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Extend `BatchSendingStats` resource with deleted
 - Add `AccountBilling.cancelAt`
 - Add `AccountEndpoint.createDefaultSubscription` endpoint
+- Add `SignatureScenario.latestVersionInfo`
 
 ## [2.5.0] - 2024-10-14
 - Add `AccountBilling.automaticTagsPlacement`
