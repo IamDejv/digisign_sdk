@@ -63,4 +63,6 @@ class EnvelopeTag extends BaseResource
     public ?string $format;
 
     public ?DateTime $dateOfSignature;
+
+    public ?string $customIdentifier;
 }

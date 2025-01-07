@@ -20,6 +20,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Add `AccountBilling.cancelAt`
 - Add `AccountEndpoint.createDefaultSubscription` endpoint
 - Add `SignatureScenario.latestVersionInfo`
+- Add `EnvelopeTag`.`customIdentifier` in to resource
+- Add `EnvelopeTemplateTag`.`customIdentifier` in to resource
 
 ## [2.5.0] - 2024-10-14
 - Add `AccountBilling.automaticTagsPlacement`
