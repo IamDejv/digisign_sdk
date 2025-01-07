@@ -58,4 +58,6 @@ class EnvelopeTemplateTag extends BaseResource
     public bool $renderInteractive;
 
     public ?string $format;
+
+    public ?string $customIdentifier;
 }
