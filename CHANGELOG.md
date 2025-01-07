@@ -13,6 +13,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 - Add `AccountSecurity.visibleNoneSignerChannelOption` in to resource
 - Add `AccountSecurity.hasCustomCertificate` in to resource
 - Add `BatchSendingsEndpoint.stats` endpoint
+- Add `BatchSendingItem.tags` in to resource
 - Extend `BatchSending` and `BatchSendingItem` resource
 - Edit `BatchSending` resource with envelopeTemplate
 - Extend `BatchSendingStats` resource with deleted
